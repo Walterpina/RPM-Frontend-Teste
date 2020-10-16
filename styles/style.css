@@ -1,0 +1,158 @@
+/* Variáveis */
+
+:root {
+    --preto: #000;
+    --vermelho: #cc0707;
+    --branco: #fff;
+}
+
+
+/*Reset total de margens*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/*Tags*/
+
+nav a {
+    color: var(--preto);
+}
+
+h3 {
+    margin-top: 25px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h5 {
+    font-weight: 600;
+}
+
+label {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+span {
+    text-transform: uppercase;
+    color: var(--vermelho);
+}
+
+p {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+footer p {
+    margin: 50px 100px 100px 100px;
+    font-size: 12px;
+}
+
+
+/*Classes*/
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario-linha {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.formulario-senha {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.formulario {
+    display: block;
+    width: 100%;
+    border-top: 1px;
+    border-right: 1px;
+    border-left: 1px;
+    border-bottom: .7px solid var(--preto);
+    height: calc(1.5rem + 0.75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--preto);
+    background-color: var(--branco);
+    background-clip: padding-box;
+}
+
+.senha {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario-grupo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-gap: 25px;
+    margin-top: 50px;
+}
+
+.formulario-grupo img {
+    width: 270px;
+}
+
+.mb-3 {
+    align-items: baseline;
+    justify-content: center;
+    align-items: center;
+}
+
+.botao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.botao-preto {
+    border: 0;
+    line-height: 2.5;
+    font-size: 1.0rem;
+    padding: 10px 40px;
+    text-align: center;
+    color: var(--branco);
+    background-color: var(--preto);
+    transition: .2s;
+}
+
+.botao-preto:hover {
+    color: #fff;
+    background-color: #1d2124;
+    border-color: #1d2124;
+}
+
+.rodape {
+    margin-top: 50px;
+}
+
+.rodape .icone {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.far .fa-question-circle {
+    color: rgba(55, 55, 55, 0.1);
+}

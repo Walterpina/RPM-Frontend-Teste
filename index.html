@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/style-menu.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="/styles/responsive.css">
+    <title>Front Desktop</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+
+            <div class="menu-overlay"></div>
+            <a class="menu-open" href="#">
+                <i class="fas fa-bars "></i>
+            </a>
+            <div class="side-menu-wrapper">
+                <a href="#" class="menu-close">
+                    <i class="fas fa-times"></i>
+                </a>
+                <ul>
+                    <li><a href="#" target="_blank" rel="nofollow">Home</a></li>
+                    <li><a href="#" target="_blank" rel="nofollow">Regulamento</a></li>
+                    <li><a href="#" target="_blank" rel="nofollow">Ganhadores</a></li>
+                    <li><a href="#" target="_blank" rel="nofollow">Fale Conosco</a></li>
+                    <li><a href="#" target="_blank" rel="nofollow">Política de Privacidade</a></li>
+                    <li><a href="#" target="_blank" rel="nofollow">Cadastro</a></li>
+                    <li><a href="#" target="_blank" rel="nofollow">Faça seu Login</a></li>
+                </ul>
+            </div>
+
+            <img class="logo" src="./images/rpm-logotipo-whi2.png" alt="logo">
+        </nav>
+
+        <div>
+            <img src="./images/Compre-Ganhe.png" class="img-fluid" alt="Responsive Image" />
+        </div>
+
+        <div class="container">
+            <h3>CADASTRE-SE E PARTICIPE</h3>
+            <h5>INFORMAÇÕES PESSOAIS</h5>
+            <form action="/" method="POST">
+                <div class="formulario-linha">
+                    <div class="col-md-5">
+                        <label for="cpf">CPF*</label>
+                        <input type="text" class="formulario">
+                    </div>
+                    <div class="col-md-7">
+                        <label for="name">Nome completo*</label>
+                        <input type="text" class="formulario">
+                    </div>
+                </div>
+                <div class="formulario-linha">
+                    <div class="col-md-6">
+                        <label for="email">E-mail*</label>
+                        <input type="email" class="formulario" id="inputE-mail" aria-describedby="emailHelp">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Confirmação E-mail*</label>
+                        <input type="email" class="formulario" id="inputE-mail" aria-describedby="emailHelp">
+                    </div>
+                </div>
+                <div class="formulario-linha">
+                    <div class="col-md-4">
+                        <label for="date">Data de Nascimento*</label>
+                        <input type="text" class="formulario">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone">Celular*</label>
+                        <input type="tel" class="formulario">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone">Outro telefone</label>
+                        <input type="tel" class="formulario">
+                    </div>
+                </div>
+                <div class="formulario-linha">
+                    <div class="col-md-7">
+                        <label for="text">Gênero*</label>
+                        <select id="genero" class="formulario">
+                          <option></option>
+                          <option>Não quero informar</option>
+                          <option>Feminino</option>
+                          <option>Masculino</option>
+                    </select>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <h5>INFORMAÇÕES RESIDENCIAIS</h5>
+            <form>
+                <div class="formulario-linha">
+                    <div class="col-md-6">
+                        <label for="validationDefault01">CEP*</label>
+                        <input type="text" class="formulario" id="validationDefault01" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault02">Endereço</label>
+                        <input type="text" class="formulario" id="validationDefault02" value="" required>
+                    </div>
+                </div>
+                <div class="formulario-linha">
+                    <div class="col-md-4">
+                        <label for="validationDefault01">Número*</label>
+                        <input type="text" class="formulario" id="validationDefault01" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault02">Complemento</label>
+                        <input type="text" class="formulario" id="validationDefault02" value="" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="validationDefault02">Bairro*</label>
+                        <input type="text" class="formulario" id="validationDefault02" value="" required>
+                    </div>
+                </div>
+
+                <div class="formulario-linha">
+                    <div class="col-md-6">
+                        <label for="validationDefault03">Cidade</label>
+                        <input type="text" class="formulario" id="validationDefault03" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="validationDefault04">Estado</label>
+                        <select class="formulario" id="validationDefault04" required>
+                          <option selected disabled value=""></option>
+                          <option>SP</option>
+                        </select>
+                    </div>
+                </div>
+                <form action="#">
+                    <div class="formulario-senha">
+                        <div class="col-md-6">
+                            <label for="inputPassword">Senha*</label>
+                            <div class="senha">
+                                <input type="password" class="formulario" id="inputPassword" aria-describedby="passwordHelpInLine">
+                                <i class="fas fa-low-vision"></i>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputPassword">Repita sua senha*</label>
+                            <div class="senha">
+                                <input type="password" class="formulario" id="inputPassword" aria-describedby="passwordHelpInLine">
+                                <i class="fas fa-low-vision"></i>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="formulario-grupo">
+                    <div class="autenticacao">
+                        <img src="./images/login-no-captcha.png" alt="captcha">
+                    </div>
+                    <div class="autenticacao">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                            ACEITO RECEBER MENSAGENS DA PROMOÇÃO.
+                          </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                            <label class="form-check-label" for="invalidCheck2">
+                            LI E CONCORDO COM O <u>TERMOS DE REGULAMENTO</u> DESTA PROMOÇÃO*.
+                          </label>
+                        </div>
+                    </div>
+                </div>
+                <label class="botao">
+                  <input type="button" class="botao-preto" value="AVANÇAR">
+                </label>
+            </form>
+        </div>
+        <div class="rodape">
+            <div class="icone" style="font-size: 1.5rem;">
+                <i class="far fa-question-circle fa-3x"></i>
+                <span>DÚVIDAS FREQUENTES.</span>
+                <p>Tudo que você precisa saber está aqui.</p>
+            </div>
+            <footer>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce vel laoreet tortor. Curabitur ultrices velit urna, ut mollis ligula laoreet sit amet. Nam vel turpis sit amet massa feugiat blandit. Donec nec metus eu erat fermentum pellentesque
+                    vel quis magna.</p>
+            </footer>
+        </div>
+        <div>
+            <script src="https://kit.fontawesome.com/19e4d513ad.js" crossorigin="anonymous"></script>
+            <script src="/scripts/bootstrap.min.js"></script>
+            <script src="/scripts/jquery.min.js"></script>
+            <script src="/scripts/setup.js"></script>
+        </div>
+</body>
+
+</html>
